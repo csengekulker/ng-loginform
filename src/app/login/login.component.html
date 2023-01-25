@@ -1,0 +1,20 @@
+<div class="loginForm bg-light p-3">
+   <h2>Bejelentkezés</h2>
+   <div class="mt-3">
+      <input 
+         type="text" 
+         placeholder="Felhasználónév"
+         [formControl]="username"
+         class="form-control w-50"
+         >
+   </div> 
+   <div class="mt-3">
+      <input 
+         type="password" 
+         placeholder="Jelszó"
+         [formControl]="password"
+         class="form-control w-50"
+         (keyup)="onKeyUp($event)"
+         >
+   </div> 
+</div>
